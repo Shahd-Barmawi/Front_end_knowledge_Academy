@@ -136,6 +136,7 @@ form img {
 .featured-products .container h2 {
     margin-bottom: 40px;
     color: #1A0B5B;
+    font-size: 42px;
 }
 
 .featured-products .product {
@@ -257,6 +258,127 @@ form img {
 
 /* end featured products section */
 
+/* start trending products section */
+
+.trending-products{
+    padding: 40px 0;
+}
+
+.trending-products .container {
+    text-align: center;
+}
+
+.trending-products h2 {
+    color: #151875;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.trending-products .t-product {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    width: calc((100% - 120px)/4);
+
+}
+
+.trending-products .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trending-products .product-info h3 {
+    color: #151875;
+}
+
+.trending-products .product-info .product-price {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.trending-products .product-price .new-price {
+    color: #151875;
+}
+
+.trending-products .product-price .old-price {
+    color: #b7bacb;
+    text-decoration: line-through;
+}
+
+.trending-products .product-img {
+    padding: 10px;
+}
+
+.trending-products .product-img img {
+    width: 100%;
+}
+
+@media screen and (max-width:1380px) {
+  .trending-products .t-product {
+    padding: 20px 0;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width:1350px) {
+  .trending-products .t-product {
+    width: calc((100% - 36px) / 4);
+  }
+
+  .trending-products .row {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width:1250px) {
+  .trending-products .t-product {
+    width: calc((100% - 12px) / 2);
+    max-width: 360px;
+  }
+
+  .trending-products .row {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .trending-products .t-product {
+    width: 100%;
+    max-width: 465px;
+  }
+
+  .trending-products h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .trending-products .product-img img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .trending-products h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .trending-products .product-img img {
+    width: 230px;
+  }
+}
+
+
+/* end trending products section */
+
 /* start update section */
 .update_section {
     background-image: url('./Images/bg.png');
@@ -362,63 +484,63 @@ form img {
 }
 
 @media screen and (max-width:1150px) {
-  .leatest-blog .blog .post-meta {
-    gap: 16px;
-  }
+    .leatest-blog .blog .post-meta {
+        gap: 16px;
+    }
 }
 
 @media screen and (max-width:1100px) {
-  .leatest-blog .blog .post-meta {
-    flex-direction: column;
-    gap: 10px;
-  }
+    .leatest-blog .blog .post-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width:1000px) {
-  .leatest-blog .blog {
-    gap: 10px;
-    padding-bottom: 20px;
-  }
+    .leatest-blog .blog {
+        gap: 10px;
+        padding-bottom: 20px;
+    }
 
-  .leatest-blog .blog .post-content {
-    gap: 10px;
-    padding: 0 10px;
-  }
+    .leatest-blog .blog .post-content {
+        gap: 10px;
+        padding: 0 10px;
+    }
 
-  .leatest-blog .blog .post-content p {
-    line-height: 20px;
-  }
+    .leatest-blog .blog .post-content p {
+        line-height: 20px;
+    }
 
-  .leatest-blog h2 {
-    font-weight: 700;
-    font-size: 30px;
-  }
+    .leatest-blog h2 {
+        font-weight: 700;
+        font-size: 30px;
+    }
 
-  .leatest-blog .blog .post-content h3 {
-    font-size: 18px;
-  }
+    .leatest-blog .blog .post-content h3 {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:900px) {
-  .leatest-blog .blog {
-    width: calc((100% - 40px) / 2);
-  }
+    .leatest-blog .blog {
+        width: calc((100% - 40px) / 2);
+    }
 }
 
 @media screen and (max-width:700px) {
-  .leatest-blog .blog {
-    width: 100%;
-  }
+    .leatest-blog .blog {
+        width: 100%;
+    }
 
-  .leatest-blog .blog .post-meta {
-    flex-direction: row;
-    gap: 25px;
-  }
+    .leatest-blog .blog .post-meta {
+        flex-direction: row;
+        gap: 25px;
+    }
 
-  .leatest-blog h2 {
-    font-weight: 700;
-    font-size: 26px;
-  }
+    .leatest-blog h2 {
+        font-weight: 700;
+        font-size: 26px;
+    }
 }
 
 
